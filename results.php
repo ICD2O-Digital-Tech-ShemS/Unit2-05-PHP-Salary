@@ -1,6 +1,6 @@
  <?php
-	$hoursWorked = $_POST['hours Worked'];
-    $hourlyRate = $_POST['hourly rate'];
+	$hoursWorked = $_POST['hours-worked'];
+    $hourlyRate = $_POST['hourly-rate'];
 
 	$pay = $hoursWorked * $hourlyRate
 ?>
