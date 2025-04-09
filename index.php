@@ -15,29 +15,28 @@
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Title -->
-    <title>Area of a Triangle in PHP</title>
+    <title>Salary</title>
   </head>
   <body>
     <?php 
-			echo "<h1>Fill in information to calculate amount of pay</h1>";
-		?>
-    <form action="./results.php" method="post" target="results">
+        echo "<h1>Fill in information to calculate amount of pay</h1>";
+    ?>
+    <!-- Form for user to input hours worked and hourly rate -->
+    <form action="results.php" method="post">
       <label for="hours-worked">Hours Worked :</label>
-      <input type="text" id="hours-worked" placeholder="hours worked">
+      <input type="text" id="hours-worked" name="hours_worked" placeholder="hours worked" required>
       <br>
       <label for="hourly-rate">Hourly Rate : $</label>
-      <input type="text" id="hourly-rate" placeholder="hourly rate">
+      <input type="text" id="hourly-rate" name="hourly_rate" placeholder="hourly rate" required>
       <br>
-   <input type="submit" value="Calculate Amount of pay">
+      <input type="submit" value="Calculate Amount of pay">
     </form>
-    </button>
+
+<iframe id="results" name="results">
     <div id="user-info">
       <div id="money-earned"></div>
-       <div id="money-taken"></div>
-
-			<!-- iframe for the results to show on the web page. -->
-			<iframe id="results" name="results">			
-				Your earn is  " + $pay "
-	    </iframe>
-	</body>
+      <div id="money-taken"></div>
+    </div>
+  </iframe>
+  </body>
 </html>
